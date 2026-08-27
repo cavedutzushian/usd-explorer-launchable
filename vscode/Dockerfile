@@ -74,7 +74,7 @@ RUN curl -fsSL https://developer.nvidia.com/downloads/USD/dataset/Factory/Factor
 		rm Factory_Lite.zip
 RUN chown -R ubuntu:ubuntu /home/ubuntu/workspace/Supplyment_Factory_Lite
 
-COPY Factory_movable_checkpoint.usd /home/ubuntu/workspace/Supplyment_Factory_Lite/Factory_movable_checkpoint.usd
+COPY --chown=ubuntu:ubuntu Factory_movable_checkpoint.usd /home/ubuntu/workspace/Supplyment_Factory_Lite/Factory_movable_checkpoint.usd
 
 ENTRYPOINT ["/bin/bash"]
 
