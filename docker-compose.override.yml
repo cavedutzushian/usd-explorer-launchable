@@ -23,7 +23,7 @@ services:
       context: ./vscode
       network: host
       args:
-        KIT_APP_TEMPLATE_BRANCH: ${KIT_APP_TEMPLATE_BRANCH:-110.2}
+        KIT_APP_TEMPLATE_BRANCH: ${KIT_APP_TEMPLATE_BRANCH:-110.2-usdexplorer}
 
   nginx:
     # Here we set the port we want to use to access our content during development.
