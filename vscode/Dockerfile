@@ -45,7 +45,7 @@ ENV WORKSPACE_DIR=/home/ubuntu/workspace
 
 WORKDIR /home/ubuntu/workspace
 
-ARG KIT_APP_TEMPLATE_BRANCH=110.2
+ARG KIT_APP_TEMPLATE_BRANCH=110.2-usd-explorer
 RUN git clone -b ${KIT_APP_TEMPLATE_BRANCH} https://github.com/cavedutzushian/kit-app-template.git
 
 COPY --chown=ubuntu:ubuntu ./README.md ${WORKSPACE_DIR}/README.md
